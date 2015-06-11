@@ -15,7 +15,10 @@ add_action( 'widgets_init', 'ns_aw');
 
 function nsaw_CSS() {
 wp_enqueue_style( 'nsaw',plugins_url('css\nsaw.css',__FILE__) );
+
+wp_enqueue_style('nsaw-font-awesome', 'http://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.css', array('nsaw'), '4.1.0' );
 }
+
 add_action( 'wp_enqueue_scripts', 'nsaw_CSS' );
 
 function ns_aw() {
@@ -77,13 +80,10 @@ echo get_avatar( $nsaw_author_email, '90','',$nsaw_author_login_id);
 <div class="nsaw-post">
 <div class="author-desc">
 <p>
-<?php the_author_meta('description'); ?><br>
-<?php if ( get_the_author_meta( 'url' ) ) { ?>
-	<a target="_blank" href="<?php the_author_meta( 'url' ) ?>" title="Author's Website"><img src="<?php  echo plugins_url('image\link.png',__FILE__)?>" /></a>
-<?php } ?>
+<?php the_author_meta('description'); ?>
 </p>
 </div>
-<p><?php echo number_format_i18n( get_the_author_posts() ); ?> Posts </br>
+<p class="author"><?php echo number_format_i18n( get_the_author_posts() ); ?> Posts
 <a class="author-link" href="<?php echo esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ); ?>" rel="author">
 	<?php printf( __( 'View all posts by %s', 'nsaw' ), get_the_author() ); ?>
 </a></p>
@@ -91,25 +91,29 @@ echo get_avatar( $nsaw_author_email, '90','',$nsaw_author_login_id);
 
 <div class="nsaw-social">
 <?php if(!empty($nsaw_fb)) {?>
-<a target="_blank" href="<?php echo get_the_author_meta( 'nsaw_fb', $nsaw_author ); ?>"><img src="<?php  echo plugins_url('image\facebook.png',__FILE__)?>" /></a>
+<a class="list-group-item" target="_blank" href="<?php echo get_the_author_meta( 'nsaw_fb', $nsaw_author ); ?>"><i class="fa fa-facebook fa-fw"></i></a>
 <?php } ?>
 
 <?php if(!empty($nsaw_twitter)) {?>
-<a target="_blank" href="<?php echo get_the_author_meta( 'nsaw_twitter', $nsaw_author ); ?>"><img src="<?php  echo plugins_url('image\twitter.png',__FILE__)?>" /></a>
+<a class="list-group-item" target="_blank" href="<?php echo get_the_author_meta( 'nsaw_twitter', $nsaw_author ); ?>"><i class="fa fa-twitter fa-fw"></i></a>
 <?php } ?>
 
 <?php if(!empty($nsaw_gp)) {?>
-<a target="_blank" href="<?php echo get_the_author_meta( 'nsaw_gp', $nsaw_author ); ?>"><img src="<?php  echo plugins_url('image\googleplus.png',__FILE__)?>" /></a>
+<a class="list-group-item" target="_blank" href="<?php echo get_the_author_meta( 'nsaw_gp', $nsaw_author ); ?>"><i class="fa fa-google-plus fa-fw"></i></a>
 <?php } ?>
 
 <?php if(!empty($nsaw_yt)) {?>
-<a target="_blank" href="<?php echo get_the_author_meta( 'nsaw_yt', $nsaw_author ); ?>"><img src="<?php  echo plugins_url('image\youtube.png',__FILE__)?>" /></a>
+<a class="list-group-item" target="_blank" href="<?php echo get_the_author_meta( 'nsaw_yt', $nsaw_author ); ?>"><i class="fa fa-youtube fa-fw"></i></a>
 <?php } ?>
 
 <?php if(!empty($nsaw_li)) {?>
-<a target="_blank" href="<?php echo get_the_author_meta( 'nsaw_li', $nsaw_author ); ?>"><img src="<?php  echo plugins_url('image\linkedin.png',__FILE__)?>" /></a>
-</div>
+<a class="list-group-item" target="_blank" href="<?php echo get_the_author_meta( 'nsaw_li', $nsaw_author ); ?>"><i class="fa fa-linkedin fa-fw"></i></a>
 <?php } ?>
+
+<?php if ( get_the_author_meta( 'url' ) ) { ?>
+	<a class="list-group-item" target="_blank" href="<?php the_author_meta( 'url' ) ?>" title="Author's Website"><i class="fa fa-link fa-fw"></i></a>
+<?php } ?>
+</div>
 
 </div>
 </div>

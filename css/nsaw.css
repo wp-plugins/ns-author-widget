@@ -4,6 +4,7 @@
 max-width:230px;
 padding: 0px 0px 10px 0px ;
 margin-bottom: 5px;
+clear: both;
 }
 
 .nsaw-inner-wrap{
@@ -36,12 +37,21 @@ border-radius: 50%;
 .nsaw-post{
 width: 100%;
 margin-top: 2px;
-padding-bottom: 2px;
+padding-bottom: 0px;
 float: left;
+border-bottom: 1px solid #e1e1e1;
 }
 
 .nsaw-post p{
 padding-left: 3px;
+}
+
+.author {
+font-size: 11px !important;
+}
+
+.author a {
+float: right;
 }
 
 .nsaw-post a{
@@ -58,25 +68,92 @@ float: left;
 position: relative;
 margin-bottom: 2px;
 padding: 3px 0 1px 7px;
-border-bottom: 1px dashed #a3a3a3;
+border-bottom: 1px solid #e1e1e1;
 }
 
 .nsaw-social{
 width: 100%;
-float: left;
 position: relative;
-padding:7px 0px 2px 0px;
-border-top: 1px dashed #a3a3a3;
+display: inline-block;
+padding: 2px 5px;
 }
 
-.nsaw-social img{
-width: 20px;
-height: 29px;
-margin-right: 5px;
+.fa {
+    display: inline-block;
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: bold;
+    line-height: 1;
+	font-size: 17px;
+	color: #fff;
+	padding: 3px 0px;
+	margin-top: 3px;
 }
 
-.nsaw-social img:hover{
-opacity: 0.9;
+.fa-facebook {
+    border: 1px solid #3b5998;
+    color: #3b5998;
+}
+
+.fa-facebook:hover {
+    border: 1px solid #3b5998;
+    background: #3b5998;
+    color: #fff;
+}
+
+.fa-twitter {
+    border: 1px solid #4099ff;
+    color: #4099ff;
+}
+
+.fa-twitter:hover {
+    border: 1px solid #4099ff;
+	background: #4099ff;
+    color: #fff;
+}
+
+.fa-google-plus {
+    border: 1px solid #dd4b39;
+    color: #dd4b39;
+}
+
+.fa-google-plus:hover {
+    border: 1px solid #dd4b39;
+	background: #dd4b39;
+    color: #fff;
+}
+
+.fa-youtube {
+    border: 1px solid #c31a1e;
+    color: #c31a1e;
+}
+
+.fa-youtube:hover {
+    border: 1px solid #c31a1e;
+	background: #c31a1e;
+    color: #fff;
+}
+
+.fa-linkedin {
+    border: 1px solid #007bb6;
+    color: #007bb6;
+}
+
+.fa-linkedin:hover {
+    border: 1px solid #007bb6;
+	background: #007bb6;
+    color: #fff;
+}
+
+.fa-link {
+    border: 1px solid #777;
+    color: #777;
+}
+
+.fa-link:hover {
+    border: 1px solid #777;
+	background: #777;
+    color: #fff;
 }
 
 .clear { clear: both; }
