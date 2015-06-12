@@ -83,7 +83,7 @@ echo get_avatar( $nsaw_author_email, '90','',$nsaw_author_login_id);
 <?php the_author_meta('description'); ?>
 </p>
 </div>
-<p class="author"><?php echo number_format_i18n( get_the_author_posts() ); ?> Posts
+<p class="author-posts"><?php echo number_format_i18n( get_the_author_posts() ); ?> Posts
 <a class="author-link" href="<?php echo esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ); ?>" rel="author">
 	<?php printf( __( 'View all posts by %s', 'nsaw' ), get_the_author() ); ?>
 </a></p>
