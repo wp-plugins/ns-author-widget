@@ -53,4 +53,15 @@ Please send your localization files (.mo и .po) to admin@netscripter.me
 4. Widget Panel.
 
 == Changelog ==
-This is completely brand new version of this plugin.
+
+= 1.2 =
+* A change of style and some css class names so there could not be any conflict and overrides with Font Awesome styles already added in themes.
+
+= 1.1 =
+* 1.2
+* 1.1
+
+== Upgrade Notice ==
+
+= 1.2 =
+This version fixes potential css style conflicts and overrides.  Upgrade immediately.

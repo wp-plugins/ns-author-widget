@@ -3,7 +3,7 @@
 Plugin Name: NS Author Widget
 Plugin URI: http://netscripter.me/ns-author-widget/
 Description: NS Author Widget is a sidebar or footer widget that displays on single posts with Post Author\'s name, avatar, description, link to all posts and social profiles.
-Version: 1.1
+Version: 1.2
 Author: Miodrag Rasic
 Author URI: http://netscripter.me/
 License: GPLv3
@@ -91,27 +91,27 @@ echo get_avatar( $nsaw_author_email, '90','',$nsaw_author_login_id);
 
 <div class="nsaw-social">
 <?php if(!empty($nsaw_fb)) {?>
-<a class="list-group-item" target="_blank" href="<?php echo get_the_author_meta( 'nsaw_fb', $nsaw_author ); ?>"><i class="fa fa-facebook fa-fw"></i></a>
+<a class="list_group_item" target="_blank" href="<?php echo get_the_author_meta( 'nsaw_fb', $nsaw_author ); ?>"><i class="fa fa-fb fa-fw"></i></a>
 <?php } ?>
 
 <?php if(!empty($nsaw_twitter)) {?>
-<a class="list-group-item" target="_blank" href="<?php echo get_the_author_meta( 'nsaw_twitter', $nsaw_author ); ?>"><i class="fa fa-twitter fa-fw"></i></a>
+<a class="list_group_item" target="_blank" href="<?php echo get_the_author_meta( 'nsaw_twitter', $nsaw_author ); ?>"><i class="fa fa-tw fa-fw"></i></a>
 <?php } ?>
 
 <?php if(!empty($nsaw_gp)) {?>
-<a class="list-group-item" target="_blank" href="<?php echo get_the_author_meta( 'nsaw_gp', $nsaw_author ); ?>"><i class="fa fa-google-plus fa-fw"></i></a>
+<a class="list_group_item" target="_blank" href="<?php echo get_the_author_meta( 'nsaw_gp', $nsaw_author ); ?>"><i class="fa fa-gp fa-fw"></i></a>
 <?php } ?>
 
 <?php if(!empty($nsaw_yt)) {?>
-<a class="list-group-item" target="_blank" href="<?php echo get_the_author_meta( 'nsaw_yt', $nsaw_author ); ?>"><i class="fa fa-youtube fa-fw"></i></a>
+<a class="list_group_item" target="_blank" href="<?php echo get_the_author_meta( 'nsaw_yt', $nsaw_author ); ?>"><i class="fa fa-yt fa-fw"></i></a>
 <?php } ?>
 
 <?php if(!empty($nsaw_li)) {?>
-<a class="list-group-item" target="_blank" href="<?php echo get_the_author_meta( 'nsaw_li', $nsaw_author ); ?>"><i class="fa fa-linkedin fa-fw"></i></a>
+<a class="list_group_item" target="_blank" href="<?php echo get_the_author_meta( 'nsaw_li', $nsaw_author ); ?>"><i class="fa fa-lin fa-fw"></i></a>
 <?php } ?>
 
 <?php if ( get_the_author_meta( 'url' ) ) { ?>
-	<a class="list-group-item" target="_blank" href="<?php the_author_meta( 'url' ) ?>" title="Author's Website"><i class="fa fa-link fa-fw"></i></a>
+	<a class="list_group_item" target="_blank" href="<?php the_author_meta( 'url' ) ?>" title="Author's Website"><i class="fa fa-l fa-fw"></i></a>
 <?php } ?>
 </div>
 
