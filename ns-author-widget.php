@@ -27,7 +27,7 @@ register_widget( 'ns_aw_info' );
 
 class ns_aw_info extends WP_Widget {
 function ns_aw_info () {
-		$this->WP_Widget('ns_aw_info', 'NS Author Widget','Select the category to display');	}
+		parent::__construct('ns_aw_info', 'NS Author Widget','Select the category to display');	}
 
 public function form( $instance ) { 
  if ( isset( $instance[ 'ns_aw_custom_title' ])) {

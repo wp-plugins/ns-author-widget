@@ -2,7 +2,7 @@
 Contributors: Miodrag Rasic
 Tags: author widget, author box, netscripter, wordpress, widget, plugin,
 Requires at least: 3.0
-Tested up to: 4.2.2
+Tested up to: 4.3.0
 Stable tag: trunk
 License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl-3.0-standalone.html
@@ -54,14 +54,21 @@ Please send your localization files (.mo и .po) to admin@netscripter.me
 
 == Changelog ==
 
+= 1.3 =
+* Changed WP_Widget that is deprecated since version 4.3.0, to __construct.
+
 = 1.2 =
 * A change of style and some css class names so there could not be any conflict and overrides with Font Awesome styles already added in themes.
 
 = 1.1 =
+* 1.3
 * 1.2
 * 1.1
 
 == Upgrade Notice ==
+
+= 1.3 =
+This version makes NS Author Widget compatibile with 4.3.0 release and remove  WP_Widget is deprecated since version 4.3.0! Use __construct() Notice. Upgrade immediately.
 
 = 1.2 =
 This version fixes potential css style conflicts and overrides.  Upgrade immediately.
