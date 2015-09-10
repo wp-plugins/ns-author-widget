@@ -1,11 +1,11 @@
 <?php
 /*
 Plugin Name: NS Author Widget
-Plugin URI: http://netscripter.me/ns-author-widget/
+Plugin URI: http://netscripter.info/ns-author-widget/
 Description: NS Author Widget is a sidebar or footer widget that displays on single posts with Post Author\'s name, avatar, description, link to all posts and social profiles.
 Version: 1.2
 Author: Miodrag Rasic
-Author URI: http://netscripter.me/
+Author URI: http://netscripter.info/
 License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl-3.0-standalone.html
 */

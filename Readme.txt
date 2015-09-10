@@ -44,7 +44,7 @@ If your Email address is registered in gravatar, then the author's gravatar imag
 
 Yes, you can find .POT file in a folder \"languages\".
 
-Please send your localization files (.mo и .po) to admin@netscripter.me
+Please send your localization files (.mo и .po) to admin@netscripter.info
 
 == Screenshots ==
 1. Five new added fields in User's profile page.

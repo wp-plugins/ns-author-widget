@@ -21,7 +21,7 @@ msgid "NS Author Widget"
 msgstr ""
 
 #. Plugin URI of the plugin/theme
-msgid "http://netscripter.me/ns-author-widget/"
+msgid "http://netscripter.info/ns-author-widget/"
 msgstr ""
 
 #. Description of the plugin/theme
@@ -36,5 +36,5 @@ msgid "Miodrag Rasic"
 msgstr ""
 
 #. Author URI of the plugin/theme
-msgid "http://netscripter.me/"
+msgid "http://netscripter.info/"
 msgstr ""
